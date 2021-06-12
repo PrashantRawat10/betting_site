@@ -1,0 +1,63 @@
+
+.carousel-inner > .item {
+    width: 500px;
+	height: 300px;
+    margin: auto;
+  }
+  .carousel-caption{
+	  font-size: 30px;
+	  font-family: 'Staatliches', cursive;
+
+  }
+ 
+ body{
+  	background-image: url('https://3.bp.blogspot.com/-qt2KSYiSfVA/V2n9BxXOK_I/AAAAAAAATYI/UVyymqoSlYsC6R6FOIxHqQbet8amfaGewCLcB/s1600/poker.jpg');
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-attachment: fixed;
+  }
+
+  form{
+  	font-family: cursive;
+  	color: black;
+  	font-size: 15px;
+  	margin-left: 40%;
+  	font-weight: bold;
+  }
+
+  h1{
+  	font-family: Georgia;
+  	color: #2c987a;
+  	font-size: 32px;
+  	margin-left: 45%;
+  	font-weight: bolder;
+  }
+  h2{
+  	font-family: Helvetica;
+  	color: #FFFFFF;
+  	font-size: 22px;
+  	font-weight: bold;
+  }
+
+  #item1{
+	font-size: 50px;
+	font-family: 'Staatliches', cursive;
+	color: wheat;
+	margin-left: 45%;
+
+  }
+
+  #win-message, #lost-message{
+	font-size: 50px;
+	display: none;
+	font-family: 'Staatliches', cursive;
+	color: wheat;
+	margin-left: 45%;
+  }
+
+.btn{
+	size: 50px;
+	margin-left:45%;
+	padding-top: 10px;
+}
