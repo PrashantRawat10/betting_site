@@ -1,0 +1,97 @@
+
+.carousel-inner > .item {
+    width: 500px;
+	height: 300px;
+    margin: auto;
+  }
+  .carousel-caption{
+	  font-size: 25px;
+	  font-family: 'Orbitron', sans-serif;
+
+  }
+ 
+ body{
+  	background-image: url('https://3.bp.blogspot.com/-qt2KSYiSfVA/V2n9BxXOK_I/AAAAAAAATYI/UVyymqoSlYsC6R6FOIxHqQbet8amfaGewCLcB/s1600/poker.jpg');
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-attachment: fixed;
+  }
+
+  form{
+  	font-family: cursive;
+  	color: black;
+  	font-size: 15px;
+  	margin-left: 40%;
+  	font-weight: bold;
+  }
+
+  h1{
+	font-family: 'Press Start 2P', cursive;
+  	color: #F7FD04;
+  	font-size: 32px;
+  	text-align: center;
+  	font-weight: bolder;
+  }
+  h2{
+	font-family: 'Orbitron', sans-serif;
+  	color: #FFFFFF;
+  	font-size: 22px;
+  	font-weight: bold;
+  }
+
+  #bet{
+	  font-size: 20px;
+  }
+
+  #item1{
+	font-size: 35px;
+	width: 50px;
+	font-family: 'Staatliches', cursive;
+	background-color: #CEE5D0;
+	color: black;
+	margin-left: 45%;
+
+  }
+
+  #win-message, #lost-message{
+	font-size: 50px;
+	display: none;
+	font-family: 'Orbitron', sans-serif;
+	color: wheat;
+	margin-left: 40%;
+  }
+
+.btn{
+	border: 1px solid #3498DB;
+	padding: 10px,20px;
+	font-size: 20px;
+	font-family: "montserrat";
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.8s;
+	overflow: hidden;
+	
+	margin-left:45%;
+	padding-top: 10px;
+}
+
+.btn:hover{
+	color: #fff;
+}
+.btn::before{
+	content:"";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height:0%;
+	background: #3498db;
+	z-index: -1;
+	transition: 0.8s;
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+
+.btn:hover::before{
+	height:180%;
+}
