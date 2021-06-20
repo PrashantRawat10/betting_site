@@ -4,33 +4,29 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>BetonMe</title>
-<!--Bootstrap for css-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- <!--jquery--> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!--bootstrap for js-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="bet.css" rel="stylesheet" />
+  <!--Bootstrap for css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!--jquery--> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!--bootstrap for js-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="bet.css" rel="stylesheet" />
    <!--google fonts--> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">  
 <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-<!-- anime.js -->
+   <!-- anime.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
 </head>
    
 <body>
 	<h1>Welcome to the Arena</h1>
-
-	<div class="container">
- 
-     <div id="myCarousel" class="carousel slide">
-    
-       <ol class="carousel-indicators">
+    <div class="container">
+      <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
          <li class="item1 active"></li>
          <li class="item2"></li>
          <li class="item3"></li>
@@ -69,13 +65,10 @@
     	<h2>Make Your Money</h2>
     	<ul class="nav nav-tabs">
     		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-    		<li><a data-toggle="tab" href="#rewards">Rewards</a></li>
+    		<li><a href="#rewards">Rewards</a></li>
     		<li><a data-toggle="tab" href="#profile">Profile</a></li>
     	</ul>
-    	
     </div>
-
-    
 
 	<div class="content">
 		<div id="betin">
@@ -83,6 +76,12 @@
 	  		<br>Enter your lucky number(1-20)<br>
         <input type="text" placeholder="Enter your lucky number" text="black" id="inputId">
 	  		<br>
+        <br>Enter the amount you want to bet <br>
+        <input type="number" placeholder="Enter the amount" step="100" text="black" id="amount">
+        <br>
+        <br>Choose the Multiplier <br>
+        <input type="number" placeholder="Multiplier" step="0.5" text="black" id="multyplier">
+        <br>
 	  	</form>
       <button class="btn" onclick="spin()">Roll</button>
 	  </div>
@@ -91,12 +90,17 @@
   <h2>The random number is</h2>
   <input type="text" id="item1" value="0">
   <div id="win-message">
-    Y-o-u W-O-N!!
+    <b>Congratulations! You won!!</b>
   </div>
   <div id="lost-message">
     You Lost
   </div>
-
+  <div class="result">
+    <br><p>Your Balance is<br></p>
+    <input type="text" text="black" value="0" id="res" >
+    <br>
+  </div>
+<div id="rewards">
   <div class="row">
     <div class="rewards-sec col-lg-4">
   <div class="card">
@@ -123,28 +127,28 @@
   </div>
 </div>
 </div>
-
+</div>
 <div class="msg">
   Today could be your Lucky Day.. Test it here and Win exciting Cash Prizes!!
 </div>
   <script src="bet.js"></script>
 
-  <!-- <footer> -->
-    <!-- <div class="footer-content">
+  <footer>
+     <div class="footer-content">
         <h3>BetonMe</h3>
         
-        <ul class="socials">
+         <ul class="socials">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
             <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-        </ul>
-    </div> -->
-    <!-- <div class="footer-bottom">
-        <p>copyright &copy;2020 BetonMe <span>nethunt</span></p>
+        </ul> 
     </div>
-</footer> -->
+    <div class="footer-bottom">
+        <p>copyright &copy;2020 BetonMe.com <span>Luck Dominates</span></p>
+    </div>
+</footer>
 </body>
 
 </html>

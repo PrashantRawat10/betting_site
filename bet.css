@@ -18,6 +18,10 @@
   	background-attachment: fixed;
   }
 
+  p{
+      color: cornsilk;
+  }
+
   form{
   	font-family: cursive;
   	color: black;
@@ -34,11 +38,11 @@
   	font-weight: bolder;
   }
   h2{
-	font-family: 'Orbitron', sans-serif;
-  	color: #FFFFFF;
+	font-family: 'Press Start 2P', sans-serif;
+  	color: #faf606;
   	font-size: 22px;
   	font-weight: bold;
-      text-align: center;
+    text-align: center;
   }
 
   #bet{
@@ -55,12 +59,20 @@
 
   }
 
-  #win-message, #lost-message{
+  #win-message{
 	font-size: 50px;
 	display: none;
 	font-family: 'Orbitron', sans-serif;
-	color: wheat;
-	margin-left: 40%;
+	color: rgb(32, 248, 4);
+	text-align: center;
+  }
+
+  #lost-message{
+	font-size: 50px;
+	display: none;
+	font-family: 'Orbitron', sans-serif;
+	color: #CEE5D0;
+	text-align: center;
   }
 
 .btn{
@@ -97,7 +109,7 @@
 	height:180%;
 }
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -108,7 +120,7 @@ footer{
     padding-top: 20px;
     color: #fff;
 }
-/* .footer-content{
+ .footer-content{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +160,7 @@ footer{
 }
 .socials a:hover i{
     color: aqua;
-} */
+} 
 
 .footer-bottom{
     background: #000;
@@ -168,7 +180,7 @@ footer{
 }
 
 .rewards-sec{
-    padding: 8% 2%;
+    padding: 5% 2%;
 }
 
 .card-img-top{
@@ -179,6 +191,12 @@ footer{
 .msg{
     text-align: center;
     font-family: 'Dela Gothic One', cursive;
-  	color: #F8F5F1;
-    font-size: 5rem;
+  	color: #f4f8f1;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+.result{
+    padding-left: 30px;
+    color: rgb(92, 82, 100);
+    font-size: 25px;
 }

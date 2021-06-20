@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 // To generate a random number
 function random() {
-  return Math.floor(Math.random()*(20-1)+1);
+  return Math.floor(Math.random()*(10-1)+1);
 }
 
 // to make the required changes when the button in cliked
@@ -46,32 +46,8 @@ function spin(){
    item1.innerHTML=num1;
   // item2.innerHTML='${num2}';
 
-
-
- 
-
+  
   //  adding animation of random number
-//   var animess= document.querySelector('#item1');
-//   var num= {
-//     Number_is: '0',
-//   }
-
-//   anime({
-//     targets: num,
-//     Number_is: num1,
-//     round: 1,
-
-//     value: [0, 100],
-//     duration: 3000,
-    
-//     easing: 'linear',
-//     // direction: 'alternate',
-    
-//      update: function() {
-//      animess.innerHTML=JSON.stringify(num);
-      
-//      },
-// });
 
 anime({
   targets: '#item1',
@@ -81,13 +57,38 @@ anime({
   easing: 'linear'
 })
 
+
+var amt;
+var multyplier = document.getElementById("multyplier").value;
+var amount = document.getElementById("amount").value;
+var res = document.getElementById("res");
+  
 var player= document.getElementById("inputId").value;
 if(num1==player){
   showMessage();
+  amt= amount * multyplier
   
+  res.innerHTML= amt
+  anime({
+    targets: '#res',
+    value:amt,
+    speed: 5000,
+    round: 1,
+    easing : 'linear'
+  })
 }
 else{
   hidemsg();
+  amt= amount / multyplier
+  
+  res.innerHTML= amt
+  anime({
+    targets: '#res',
+    value:amt,
+    speed: 5000,
+    round: 1,
+    easing : 'linear'
+  })
 }
 }
 
@@ -108,4 +109,6 @@ else{
     msg.style.display = 'none'
     
   }
+
+  
 
